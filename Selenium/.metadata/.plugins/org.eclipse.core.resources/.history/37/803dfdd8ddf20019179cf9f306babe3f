@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+&lt;suite name="David Zwirner" &gt;
+
+ &lt;test name="LoginDZ" &gt;
+
+ &lt;classes&gt; &lt;class name="com.org.main.dz.Login" /&gt;
+
+ &lt;/classes&gt;
+
+ &lt;/test&gt;
+
+ &lt;/suite&gt;

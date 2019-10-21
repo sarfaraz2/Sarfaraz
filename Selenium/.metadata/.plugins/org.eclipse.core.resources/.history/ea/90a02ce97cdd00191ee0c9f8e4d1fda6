@@ -1,0 +1,16 @@
+package seleniumpracticeself;
+
+public class table {
+
+	public static void main(String[] args) {
+		int i;
+		int j=2;
+		for(i=1;i<=10;i++) {
+			i = i*j;
+			System.out.println("The count of two" +i);
+		}
+		
+
+	}
+
+}

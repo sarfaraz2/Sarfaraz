@@ -1,0 +1,18 @@
+package com.org.main.dz;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class Login extends Browsewopenclose{
+	static WebDriver driver;
+	
+	
+@Test
+public void DZlogin(){
+driver.findElement(By.xpath("//input[@name='name']")).sendKeys("alexa");
+driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("alexa123#");
+driver.findElement(By.xpath("//input[@name='op']")).click();
+	}
+
+	}

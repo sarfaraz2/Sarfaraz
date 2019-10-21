@@ -1,0 +1,31 @@
+package seleniumpracticeself;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookSignup {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://facebook.com");
+		WebElement Firstname = driver.findElement(By.xpath("//input[@name= 'firstname']"));
+		Firstname.sendKeys("Shegufa");
+		WebElement Lastname = driver.findElement(By.xpath("//input[@name='lastname']"));
+		Lastname.sendKeys("Naz");
+		WebElement Mobileno = driver.findElement(By.xpath("//input[@name='reg_email__']"));
+		Mobileno.sendKeys("123456789");
+		WebElement Password = driver.findElement(By.xpath("//input[@name='reg_passwd__']']"));
+		Password.sendKeys("icreon123#");
+		WebElement Birt_day = driver.findElement(By.xpath("//Select[@id='day']"));
+		Birt_day.click();
+		WebElement Birt_dayval = driver.findElement(By.xpath("//Select[@id='day']/option[@value='4']"));
+		Birt_dayval.click();
+		
+		
+
+	}
+
+}

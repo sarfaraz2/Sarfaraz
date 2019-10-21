@@ -1,0 +1,31 @@
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class TestngDemo extends BaseTest{
+	
+	@Test
+	public void checkUserNameExist() throws InterruptedException {		
+		String result = "Pass";
+		try {
+		driver.findElement(By.xpath("/html/body/input[1]/d")).sendKeys("Mohan");
+		} catch(Exception e) {
+			result = "Fail";
+		}
+		assertEquals(result, "Pass");
+		Thread.sleep(3000);
+	}
+	
+	@Test(dependsOnMethods="checkUserNameExist")
+	public void checkGoMohanLinkExist() {
+		//String result = "Pass";
+		driver.findElement(By.linkText("Go Mohan")).click();
+		//System.out.println(result);
+	}
+
+}

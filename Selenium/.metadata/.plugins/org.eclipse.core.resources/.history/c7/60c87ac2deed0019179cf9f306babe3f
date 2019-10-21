@@ -1,0 +1,50 @@
+package seleniumpracticeself;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Testngselfdemo {
+	static WebDriver driver;
+	String CurrentPageUrl ="https://www.davidzwirner.com/admin";
+	
+	@Test
+	public void DZlogin(){
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://davidzwirner.com/user");
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("alexa");
+		driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("alexa123#");
+		driver.findElement(By.xpath("//input[@name='op']")).click();
+		String CurrentURL = driver.getCurrentUrl();
+		if(CurrentURL.equals(CurrentPageUrl)){
+			System.out.print("Correct");
+			
+		}
+		else {
+			System.out.print("incorrect");
+		}
+		driver.close();
+	}
+	
+	@Test
+	public void findmenu() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://davidzwirner.com/");
+		List<WebElement> Links=driver.findElements(By.tagName("a"));
+		System.out.println(Links.size());
+		
+	}
+	
+	
+	}
+
+
+

@@ -1,0 +1,9 @@
+package PradeepGroup.PradeepArtifact;
+
+
+public class AppTest 
+{
+    public void testCase1() {
+    	System.out.println("Test Case 1");
+    }
+}

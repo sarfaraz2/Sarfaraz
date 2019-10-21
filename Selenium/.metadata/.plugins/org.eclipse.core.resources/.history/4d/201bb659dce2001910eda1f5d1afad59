@@ -1,0 +1,12 @@
+package seleniumpracticeself;
+
+public class FacebookSignup {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\geckodriver.exe");
+		ChromeDriver driver= new ChromeDriver();
+		
+
+	}
+
+}

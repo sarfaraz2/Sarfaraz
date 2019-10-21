@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50813" started-at="2019-10-20T05:40:25Z" finished-at="2019-10-20T05:41:15Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="50813" started-at="2019-10-20T05:40:25Z" finished-at="2019-10-20T05:41:15Z">
+      <class name="PradeepGroup.PradeepArtifact.AppTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:PradeepGroup.PradeepArtifact.AppTest@6b2fad11]" name="openBrowser" is-config="true" duration-ms="9505" started-at="2019-10-20T11:10:25Z" finished-at="2019-10-20T11:10:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:PradeepGroup.PradeepArtifact.AppTest@6b2fad11]" name="testCase1" duration-ms="40833" started-at="2019-10-20T11:10:34Z" finished-at="2019-10-20T11:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:PradeepGroup.PradeepArtifact.AppTest@6b2fad11]" name="closeBrowser" is-config="true" duration-ms="450" started-at="2019-10-20T11:11:15Z" finished-at="2019-10-20T11:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- PradeepGroup.PradeepArtifact.AppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,21 @@
+
+public class Myfirst {
+
+	 {
+		// TODO Auto-generated method stub
+		
+		Employee Obj1 = new Employee Obj1();
+		Employee.EmpID = 1234;
+		
+		
+		
+		
+		Employee Obj2 = new Employee Obj 2();
+		
+		
+	
+		
+
+	}
+
+}

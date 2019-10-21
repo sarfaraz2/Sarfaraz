@@ -1,0 +1,12 @@
+package PradeepGroup.PradeepArtifact;
+
+import org.testng.annotations.Test;
+
+public class AppTest 
+{
+	@Test
+    public void testCase1() {
+    	System.out.println("Test Case 1");
+    }
+    
+}

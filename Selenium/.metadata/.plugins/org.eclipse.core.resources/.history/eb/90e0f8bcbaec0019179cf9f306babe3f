@@ -1,0 +1,45 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestngDemo {
+
+	static WebDriver driver;
+	
+	@BeforeMethod
+	public void openBrowser() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("file:///C:/Users/sarfaraz.ahmad/Desktop/WebSite/WebSite/Pradeep.html");
+
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+	}
+	
+	@AfterMethod
+	public void closeBrowser() {
+		driver.close();
+	}
+	
+	@Test
+	public void checkUserNameExist() {		
+		String result = "Pass";
+		try {
+		driver.findElement(By.xpath("/html/body/input[1]"));
+		} catch(Exception e) {
+			result = "Fail";
+		}
+		System.out.println(result);
+	}
+	
+	@Test
+	public void checkGoMohanLinkExist() {
+		//String result = "Pass";
+		driver.findElement(By.linkText("Go Mohan"));
+		//System.out.println(result);
+	}
+
+}

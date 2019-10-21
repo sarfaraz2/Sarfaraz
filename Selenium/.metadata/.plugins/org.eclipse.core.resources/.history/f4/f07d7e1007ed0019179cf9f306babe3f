@@ -1,0 +1,13 @@
+package com.org.main.dz;
+
+import org.openqa.selenium.WebDriver;
+
+public class Login {
+	static WebDriver driver;
+	
+public void login() {
+	driver.
+		
+	}
+
+}

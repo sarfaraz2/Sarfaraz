@@ -1,0 +1,18 @@
+package seleniumpracticeself;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Windowhandler {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarfaraz.ahmad\\Desktop\\drivers\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		driver.get("https://www.davidzwirner.com/");
+		driver.findElementByLinkText("Load more news").click();
+		driver.findElement(By.xpath("//div[@class='slide--title']/a[text()='Kerry James Marshall: History of Painting']")).click();
+			
+	}
+
+}

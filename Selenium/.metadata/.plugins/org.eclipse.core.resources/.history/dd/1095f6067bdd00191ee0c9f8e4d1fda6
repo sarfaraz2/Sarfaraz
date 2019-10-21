@@ -1,0 +1,10 @@
+package seleniumpracticeself;
+
+public class table {
+	int i;
+
+	for(i=1;i<=10;i++)
+	{
+		i = i * 2;
+		return i;
+	}

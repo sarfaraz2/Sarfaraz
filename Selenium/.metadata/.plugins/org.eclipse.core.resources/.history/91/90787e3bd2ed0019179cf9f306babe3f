@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonSuite" >
+  <test thread-count="5" name="OfferTest">
+   <parameter name = "browserType" value="Chrome"/>   
+    <classes>
+      <class name="TestngDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="OfferTest">
+    <classes>
+      <class name="TestngGogo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+package com.org.main.dz;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Login extends Browsewopenclose{
+	static WebDriver driver;
+	
+	public void DZlogin(){
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("alexa");
+		
+	}
+	
+	
+	
+}

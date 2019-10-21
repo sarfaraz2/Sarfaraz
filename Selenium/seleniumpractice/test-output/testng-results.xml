@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35840" started-at="2019-10-13T18:55:40Z" finished-at="2019-10-13T18:56:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35840" started-at="2019-10-13T18:55:40Z" finished-at="2019-10-13T18:56:15Z">
+      <class name="seleniumpracticeself.Testngselfdemo">
+        <test-method status="PASS" signature="DZlogin()[pri:0, instance:seleniumpracticeself.Testngselfdemo@d2cc05a]" name="DZlogin" duration-ms="13997" started-at="2019-10-13T18:55:40Z" finished-at="2019-10-13T18:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DZlogin -->
+        <test-method status="PASS" signature="findmenu()[pri:0, instance:seleniumpracticeself.Testngselfdemo@d2cc05a]" name="findmenu" duration-ms="21804" started-at="2019-10-13T18:55:54Z" finished-at="2019-10-13T18:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findmenu -->
+      </class> <!-- seleniumpracticeself.Testngselfdemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
